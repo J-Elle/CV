@@ -1,20 +1,28 @@
 
+@font-face {
+	font-family: Script;
+	src: url(../font/DancingScript-VariableFont_wght.ttf); /*get different font using @font-face from google*/
+}
 
 
 body {
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(199, 199, 199);
+}
+
+#content_wrapper {
+    min-width: 800px;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 5%;
+    border: 5px solid rgb(247, 11, 23);
 }
 
 #web_dev_header {
     display: block;
     background-color: rgb(68, 68, 70);
-    width: 80%;
-    min-width: 1200px;
     height: 200px;
-    margin-top: 20%;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: 5px solid rgb(247, 11, 148);
+    border: 5px solid rgb(192, 11, 247);
+    position: relative;
 }
 
 #img_container {
@@ -24,36 +32,66 @@ body {
 
 
 #web_dev_text {
-    display: inline;
+    display: block;
     color:white;
     font-size: 3em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: relative;
-    border: 5px solid rgb(247, 11, 148);
-    width: 100%;
-    /*top: 45%; left: 20%;*/
-    left: 15%;
-    top: 40%;
+    position: absolute;
+    /*border: 5px solid rgb(247, 11, 148);*/
+    min-width: 350px;
+    top: 35%;
+    left: 10%;
+    
+
 }
 
 #info_container_1 {
     display: block;
-    width: 80%;
-    margin-left: 5%;
-    margin-right: 5%;
-    min-width: 1200px;
-    border: 5px solid rgb(247, 11, 148);
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    min-width: 800px;
+    border: 5px solid rgb(11, 247, 188);
     overflow: auto;
 }
 
+#aspiring {
+    font-family: Script, serif; 
+    /*display: block;*/
+    color:white;
+    font-size: 0.4em;
+    width: 6ch;
+    position: absolute;
+    top: -35%;
+    left: -12%;
+    /*border: 5px solid rgb(247, 11, 148);*/
+}
+
 #col_left {
-    border: 5px solid rgb(247, 11, 148);
+    border: 5px solid rgb(54, 11, 247);
+    min-width: 200px;
     width: 49%;
-    float: left;
+    /*float: left;*/
 }
 
 #col_right{
-    border: 5px solid rgb(247, 11, 148);
+    border: 5px solid rgb(231, 247, 11);
+    min-width: 200px;
     width: 49%;
-    float: right;
+    /*position: relative;*/
+}
+
+.rotate {
+    -moz-transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+}
+
+
+@media (min-width:900px) {
+    #col_left{
+        float: left;
+    }
+    #col_right{
+        float: left;
+    }    
 }
