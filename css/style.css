@@ -14,14 +14,14 @@ body {
     min-width: 600px;
     width: 80%;
     margin: 10% auto; 
-    border: 5px solid rgb(247, 11, 23);
+    /*border: 5px solid rgb(247, 11, 23);*/
 }
 
 #web_dev_header {
     display: block;
     background-color: rgb(68, 68, 70);
     height: 200px;
-    border: 5px solid rgb(192, 11, 247);
+    /*border: 5px solid rgb(192, 11, 247);*/
     position: relative;
 }
 
@@ -47,11 +47,12 @@ body {
 
 #info_container_1 {
     display: block;
-    width: 100%;
+    width: 99%;
     margin-left: 0%;
     margin-right: 0%;
+    margin-top: 5%;
     min-width: 600px;
-    border: 5px solid rgb(11, 247, 188);
+    border: 7px solid rgb(68, 68, 70);
     overflow: auto;
 }
 
@@ -67,26 +68,21 @@ body {
     /*border: 5px solid rgb(247, 11, 148);*/
 }
 
-#prof_pic_container{
-    float: right;
-    border: 5px solid rgb(39, 247, 11);
-    height: fit-content;
-    width: fit-content;
-}
 
 .contact_info {
     float: left;
-    border: 5px solid rgb(153, 11, 247);
+    /*border: 5px solid rgb(153, 11, 247);*/
     width: 50%;
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 5px;
+    min-width: fit-content;
 }
 
 #name {
     font-size: 2em;
     width: 100%;
-    border: 5px solid rgb(11, 247, 137);
+    /*border: 5px solid rgb(11, 247, 137);*/
     text-align: center;
 }
 
@@ -98,7 +94,7 @@ body {
     
     position: relative;
     /*left: 50%;*/
-    border: 5px solid rgb(233, 11, 247);
+    /*border: 5px solid rgb(233, 11, 247);*/
 }
 
 #about_me {
@@ -113,6 +109,9 @@ body {
     margin-top: 10px;
 }
 
+.#info_container_1 p:first-child {
+    /*font-weight: bold;*/
+}
 
 .rotate {
     -moz-transform: rotate(-35deg);
@@ -141,12 +140,14 @@ body {
         /*width: 100px;*/
         border: 5px solid rgb(231, 247, 11);  
     } 
-
-    #prof_pic_container {
-        height: 50px;
-        width: 40px;
-        
+ 
+    #profile_pic {
+        height: 120px;
+        width: 100px;
+        position:absolute;
+        right: 10px;
     }
+
 
 }
 /********** DESKTOP FORMAT ***********/
@@ -154,30 +155,34 @@ body {
     
     #col_left{
         position: relative; /* Positioning as ancestor */
-        min-width: 48%;
+        min-width: 46%;
         /*max-width: 40%;*/
         width: 49%;
         float: left;     
-        border: 5px solid rgb(54, 11, 247);
+        border-right: 5px solid rgb(68, 68, 70);
     }
     
     #col_right{
-        /*display:inline;*/
+        /*display:inline;*/ /*Why didn't inline flow around the float:left item? Because it doesn't start with a <br> by default, needed to use clear?*/
+        /*float: left; *** This is causing other min widths to kick in for history elements */
         position: relative; 
         min-width: 40%;
         margin-left: 50px;
-        /*max-width: auto;*/
-        /*width:180px;*/
-        /*float: left;*/ 
+        height: inherit;
         overflow: auto;
-        border: 5px solid rgb(231, 247, 11);
+        /*border-left: 5px solid rgb(68, 68, 70);
+        border-bottom: 5px solid rgb(68, 68, 70);*/
     }   
     
     #profile_pic {
-        height: 120px;
-        width: 100px;
-        position:absolute;
-        right: 10px;
+        display: block;
+        height: auto;
+        width: 20%;
+        
+        position: relative;
+        margin-left: 40%;
+        margin-right: 52%;
+        margin-bottom: 5%;
     }
 
 }
