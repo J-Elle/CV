@@ -7,6 +7,7 @@
 
 body {
     background-color: rgb(199, 199, 199);
+    margin: 10px;
 }
 
 #content_wrapper {
@@ -73,12 +74,13 @@ body {
     width: fit-content;
 }
 
-#contact_form {
+.contact_info {
     float: left;
     border: 5px solid rgb(153, 11, 247);
     width: 50%;
     margin-right: 10px;
     margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 #name {
@@ -88,9 +90,29 @@ body {
     text-align: center;
 }
 
-#contact_number {
-    text-align: center;
+
+.history {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    
+    position: relative;
+    /*left: 50%;*/
+    border: 5px solid rgb(233, 11, 247);
 }
+
+#about_me {
+    margin-top: 20px;
+}
+
+#col_right h1{
+    font-weight: bold;
+}
+
+#col_right p{
+    margin-top: 10px;
+}
+
 
 .rotate {
     -moz-transform: rotate(-35deg);
@@ -105,8 +127,9 @@ body {
 /******* MOBILE FORMAT ***********/
 @media (max-width:600px) {
     
+    
     #col_left{
-        /*min-width: 800px;*/
+        /*in-width: 40%;*/
         /*width: 100%;*/
         clear: right;
         border: 5px solid rgb(54, 11, 247);
@@ -115,7 +138,7 @@ body {
     }
     #col_right{
         /*min-width: 800px;*/
-        /*width: 100%;*/
+        /*width: 100px;*/
         border: 5px solid rgb(231, 247, 11);  
     } 
 
@@ -130,31 +153,31 @@ body {
 @media (min-width:601px) {
     
     #col_left{
-        /*min-width: 600px;*/
-        max-width: 40%;
+        position: relative; /* Positioning as ancestor */
+        min-width: 48%;
+        /*max-width: 40%;*/
         width: 49%;
-        float: left;
-        position: relative;
+        float: left;     
         border: 5px solid rgb(54, 11, 247);
     }
+    
     #col_right{
-        /*min-width: 600px;*/
+        /*display:inline;*/
+        position: relative; 
+        min-width: 40%;
+        margin-left: 50px;
         /*max-width: auto;*/
-        width: 49%;
-        float: left; 
+        /*width:180px;*/
+        /*float: left;*/ 
+        overflow: auto;
         border: 5px solid rgb(231, 247, 11);
     }   
     
     #profile_pic {
         height: 120px;
         width: 100px;
+        position:absolute;
+        right: 10px;
     }
 
-    #prof_pic_container{
-        position: relative;
-        margin-top: 5%;
-        margin-bottom: 5px;
-        margin-right: 5px;
-    }
-    
 }
