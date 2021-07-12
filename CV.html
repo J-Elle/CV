@@ -4,16 +4,30 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width">
-    <title> Janelle Peisley</title>
+    <meta name="description" content="CV">
+    <meta name="keywords" content="CV, COSC260, Snorlax, CV, HTML, CSS">
+    <meta name = "author" content="Janelle Peisley">
+    <title> Snorlax CV</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
+    
+    <!-- NAV HEADER STARTS-->
+    <nav id="nav">
+        <ul>
+            <li><a href="">MENU</a></li>
+            <li><a href="awards_page.html">AWARDS</a></li>
+        </ul>
+    </nav>
+    <!-- NAV HEADER ENDS -->
+
     <section id="content_wrapper">
+        
         <!-- TITLE HEADER START -->
-        <div id="web_dev_header">
-            <div id="img_container">
+        <div id="web_dev_header" class="headers">
+            <div id="img_container" class="header_images">
                 <img src="img/colour-geometric.png" height=200 width=500 alt="Colour Pattern">                     
             </div>        
             <h1 id="web_dev_text">Web Developer
@@ -21,15 +35,17 @@
             </h1> 
         </div>
         <!-- TITLE HEADER END -->
-    <div id="info_container_1">
+        
+    <!-- INFO CONTAINER 1 START -->   
+    <div id="info_container_1" class="info_containers">
         <!-- LEFT COLUMN START -->
         <div id="col_left">
-            <h2 id="name">Snorlax</h2><br>
+            <h2 id="name"><strong>Snorlax</strong></h2><br>
             <img id="profile_pic" src="img/snorlax.jpg" alt="Snorlax">
-            <p id="contact_number" class="contact_info">Phone: 0447 044 885</p>
-            <p id="email" class="contact_info">Email: snorlax@myune.edu.au</p> 
-            <p id="github" class="contact_info">Github: snorlax@github.com.au</p>
-            <p id="webpage" class="contact_info">Webpage: www.snorlax.com</p>    
+            <p id="contact_number" class="contact_info"><b>Phone:</b> 0447 044 885</p>
+            <p id="email" class="contact_info"><b>Email:</b> snorlax@myune.edu.au</p> 
+            <p id="github" class="contact_info"><b>Github:</b> snorlax@github.com.au</p>
+            <p id="webpage" class="contact_info"><b>Webpage:</b> www.snorlax.com</p>    
         </div>
         <!-- LEFT COLUMN END -->
         <!-- RIGHT COLUMN START-->
@@ -37,20 +53,60 @@
             <div id="about_me" class="history">
                 <h1>About me</h1>
                 <p>I'm a fighting type pokemon who has been
-                working hard on my web development skills.</p>
+                working hard on my web development skills. I am looking to retire from 
+                the Pokemon League and start a new career developing exciting websites.</p>
             </div>
             <div id="education" class="history">
                 <h1>Education</h1>
-                <p>Pokemon School of Web Development</p>
+                <p>2018 - 2021 Pokemon School of Web Development - B.sc Web Development</p>
+                <p>2012 - 2018 Academy of Computers - Dip. Computer Skills</p>
             </div>
             <div id="favourite_links" class="history">
                 <h1>Favourite Links</h1>
-                <p> Link a </p>
+                <a href="https://www.youtube.com/channel/UCFctpiB_Hnlk3ejWfHqSm6Q">Pokemon YouTube Channel</a>
             </div>
         </div>
         <!-- RIGHT COLUMN END -->
     </div>
+    <!-- INFO CONTAINER 1 END-->
+    
+    
+    <!-- SKILLS HEADER START -->
+        <div id="skills_header" class="headers">
+            <div id="image_container_2" class="header_images">
+                <img src="img/triangles.png" height=100 width=200 alt="Colour Pattern">    
+            </div>
+            <h1> Skills</h1>
+        </div>
+    <!-- SKILLS HEADER END -->
+
+    <!-- SKILLS CONTAINER START -->
+    <div id="skills" class="info_containers">
+        <ul>
+            <li>Immunity</li>
+            <li>Thick Fat</li>
+            <li>Gluttony</li>
+        </ul>
+    </div>    
+    <!-- SKILLS CONTAINER END -->
+
+    <!-- EMPLOYMENT HEADER START -->
+        <div id="employment_header" class="headers">
+            <div id="image_container_3" class="header_images">
+                <img src="img/triangles.png" height=100 width=200 alt="Colour Pattern">    
+            </div>
+            <h1> Employment History</h1>
+        </div>
+    <!-- EMPLOYMENT HEADER END -->
+
+    <!-- EMPLOYMENT CONTAINER START -->
+    <div id="employment_history" class="info_containers">
+        <h1>Pokemon League 1996- present</h1>
+        <p><i>Kicking pokemon butt</i></p>
+    </div>    
+    <!-- EMPLOYMENT CONTAINER END -->    
     </section> 
+
 </body>
 
 </html>

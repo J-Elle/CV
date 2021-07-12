@@ -4,11 +4,55 @@
 	src: url(../font/DancingScript-VariableFont_wght.ttf); /*get different font using @font-face from google*/
 }
 
+i {
+    font-style: italic;
+}
+
+b {
+    font-weight: bold;
+}
 
 body {
     background-color: rgb(199, 199, 199);
     margin: 10px;
 }
+
+#nav {
+    background-color: rgb(68, 68, 70);
+    font-size: 1.2em;
+    color:white;
+    height: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    /* Font repeated here, should simplify */
+    /*position: relative;*/
+}
+
+#nav li {
+    /*position: absolute;*/
+    display: inline-block;
+    
+    margin-left: 3%;
+    padding-top: 0.4em;
+    /*
+    left: 5%;
+    top: 20%;
+    */
+}
+
+nav li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    /*display: inline-block;*/
+    margin: 3%;
+}
+
+#nav li a:hover{
+    color: rgb(68, 68, 70);
+    background: white;
+    font-weight: bold;
+}
+
 
 #content_wrapper {
     min-width: 600px;
@@ -17,35 +61,63 @@ body {
     /*border: 5px solid rgb(247, 11, 23);*/
 }
 
-#web_dev_header {
+#skills_header {
+    height: 100px;
+}
+
+.headers {
     display: block;
     background-color: rgb(68, 68, 70);
-    height: 200px;
     /*border: 5px solid rgb(192, 11, 247);*/
     position: relative;
 }
 
-#img_container {
-    display: block;
-    float: right;   
+.headers h1 {
+    color:white;
+    font-size: 3em;
+    position: absolute;
+    min-width: 350px;
+    top: 30%;
+    left: 10%;
+    
 }
 
+#web_dev_header {
+    height: 200px;
+}
+
+#employment_header{
+    height: 100px;
+}
+
+
+
+
+.header_images{
+    display:block;
+    float: right;
+    /*overflow: auto;*/
+}
+
+#content_wrapper {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
 
 #web_dev_text {
     display: block;
     color:white;
     font-size: 3em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*
     position: absolute;
     /*border: 5px solid rgb(247, 11, 148);*/
     min-width: 350px;
     top: 35%;
     left: 10%;
-    
 
 }
 
-#info_container_1 {
+#image_container {
     display: block;
     width: 99%;
     margin-left: 0%;
@@ -79,6 +151,7 @@ body {
     min-width: fit-content;
 }
 
+
 #name {
     font-size: 2em;
     width: 100%;
@@ -88,14 +161,34 @@ body {
 
 
 .history {
+    /*margin: 20px, 10px, 5px, 10px;*/
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 5px;
-    
+    margin-top: 20px;
     position: relative;
     /*left: 50%;*/
     /*border: 5px solid rgb(233, 11, 247);*/
 }
+
+.history h1 {
+    margin-bottom: 20px;
+}
+
+.history a {
+    color:mediumblue;
+    text-decoration: none;
+}
+
+.history a:hover {
+    color: blueviolet;
+}
+
+/* WANT TO USE ANOTHER PSEUDO CLASS OTHER THAN HOVER
+.history a:visited {
+    color:limegreen;
+}
+*/
 
 #about_me {
     margin-top: 20px;
@@ -109,8 +202,41 @@ body {
     margin-top: 10px;
 }
 
-.#info_container_1 p:first-child {
+
+.info_containers {
+    margin-top: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 5%;
+    min-width: 600px;
+    border: 7px solid rgb(68, 68, 70);
+    overflow: auto;
     /*font-weight: bold;*/
+}
+
+#skills li {
+    margin: 2%; 
+    display: inline-block;
+}
+
+/*
+#previous_employment {
+    display: block;
+    background-color: rgb(68, 68, 70);
+    height: 50px;
+    /*border: 5px solid rgb(192, 11, 247);
+    position: relative;
+}
+
+*/
+
+#employment_history h1 {
+    font-weight: bold;
+    margin: 2%;
+}
+
+#employment_history p{
+    margin: 2%;
 }
 
 .rotate {
@@ -159,7 +285,8 @@ body {
         /*max-width: 40%;*/
         width: 49%;
         float: left;     
-        border-right: 5px solid rgb(68, 68, 70);
+        /*border-right: 7px solid rgb(68, 68, 70);*/
+        border: 5px solid yellow;
     }
     
     #col_right{
@@ -170,17 +297,16 @@ body {
         margin-left: 50px;
         height: inherit;
         overflow: auto;
-        /*border-left: 5px solid rgb(68, 68, 70);
-        border-bottom: 5px solid rgb(68, 68, 70);*/
+        border: 5px solid green;
     }   
     
     #profile_pic {
         display: block;
         height: auto;
-        width: 20%;
+        width: 40%;
         
         position: relative;
-        margin-left: 40%;
+        margin-left: 30%;
         margin-right: 52%;
         margin-bottom: 5%;
     }
