@@ -14,6 +14,7 @@ b {
 
 body {
     background-color: rgb(199, 199, 199);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 10px;
 }
 
@@ -22,64 +23,51 @@ body {
     font-size: 1.2em;
     color:white;
     height: 1.5em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-    /* Font repeated here, should simplify */
-    /*position: relative;*/
 }
 
 #nav li {
-    /*position: absolute;*/
-    display: inline-block;
-    
-    margin-left: 3%;
-    padding-top: 0.4em;
-    /*
-    left: 5%;
-    top: 20%;
-    */
+    display: inline;
+    margin-left: 1%;
 }
 
 nav li a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    /*display: inline-block;*/
-    margin: 3%;
 }
 
 #nav li a:hover{
     color: rgb(68, 68, 70);
     background: white;
-    font-weight: bold;
 }
 
-
 #content_wrapper {
-    min-width: 600px;
     width: 80%;
     margin: 10% auto; 
     /*border: 5px solid rgb(247, 11, 23);*/
 }
 
-#skills_header {
-    height: 100px;
-}
+
 
 .headers {
     display: block;
     background-color: rgb(68, 68, 70);
-    /*border: 5px solid rgb(192, 11, 247);*/
+    color:white;
+    font-size: 3em;
     position: relative;
+    /*border: 5px solid rgb(192, 11, 247);*/
 }
 
 .headers h1 {
-    color:white;
-    font-size: 3em;
     position: absolute;
     min-width: 350px;
     top: 30%;
     left: 10%;
-    
+}
+
+.header_images{
+    display:block;
+    float: right;
 }
 
 #web_dev_header {
@@ -90,19 +78,13 @@ nav li a {
     height: 100px;
 }
 
-
-
-
-.header_images{
-    display:block;
-    float: right;
-    /*overflow: auto;*/
+#skills_header {
+    height: 100px;
 }
 
-#content_wrapper {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-}
+
+
+
 
 #web_dev_text {
     display: block;
@@ -260,6 +242,7 @@ nav li a {
         border: 5px solid rgb(54, 11, 247);
         /*height: fit-content;*/
         overflow: auto;
+        height: inherit;
     }
     #col_right{
         /*min-width: 800px;*/
@@ -272,6 +255,11 @@ nav li a {
         width: 100px;
         position:absolute;
         right: 10px;
+    }
+
+    #img_container {
+        height: 20px;
+        width: 40px;
     }
 
 
@@ -294,8 +282,7 @@ nav li a {
         /*float: left; *** This is causing other min widths to kick in for history elements */
         position: relative; 
         min-width: 40%;
-        margin-left: 50px;
-        height: inherit;
+        margin-left: -1px;
         overflow: auto;
         border: 5px solid green;
     }   
