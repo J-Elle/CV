@@ -58,11 +58,13 @@ nav li a {
     /*border: 5px solid rgb(192, 11, 247);*/
 }
 
-.headers h1 {
-    position: absolute;
-    min-width: 350px;
-    top: 30%;
-    left: 10%;
+
+.headers h2 {
+    /*Absolute used as design choice to maintain position within the header container as it contracts*/
+    position: absolute; 
+    font-size: 0.8em;
+    float: left;
+    padding: 0.8em;
 }
 
 .header_images{
@@ -72,6 +74,7 @@ nav li a {
 
 #web_dev_header {
     height: 200px;
+    /*border: solid 3px red;*/
 }
 
 #employment_header{
@@ -82,41 +85,20 @@ nav li a {
     height: 100px;
 }
 
-
-
-
-
 #web_dev_text {
-    display: block;
-    color:white;
-    font-size: 3em;
-    /*
-    position: absolute;
-    /*border: 5px solid rgb(247, 11, 148);*/
-    min-width: 350px;
-    top: 35%;
+    /*Positioned to be an ancestor for #aspiring*/
+    position: absolute; 
+    float: left;
     left: 10%;
-
-}
-
-#image_container {
-    display: block;
-    width: 99%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 5%;
-    min-width: 600px;
-    border: 7px solid rgb(68, 68, 70);
-    overflow: auto;
+    top: 35%;
+    /*border: 5px solid rgb(247, 11, 148);*/
 }
 
 #aspiring {
+    position: absolute; /*Anchor this element to the parent #web_dev_text for styling purposes*/
     font-family: Script, serif; 
-    /*display: block;*/
-    color:white;
     font-size: 0.4em;
     width: 6ch;
-    position: absolute;
     top: -35%;
     left: -12%;
     /*border: 5px solid rgb(247, 11, 148);*/
@@ -125,20 +107,21 @@ nav li a {
 
 .contact_info {
     float: left;
-    /*border: 5px solid rgb(153, 11, 247);*/
-    width: 50%;
-    margin-right: 10px;
+    width: 90%;
     margin-left: 10px;
     margin-bottom: 5px;
-    min-width: fit-content;
+    /*border: 5px solid rgb(153, 11, 247);*/
+}
+
+#contact_number {
+    margin-top: 20%;
 }
 
 
 #name {
     font-size: 2em;
-    width: 100%;
-    /*border: 5px solid rgb(11, 247, 137);*/
     text-align: center;
+    /*border: 5px solid rgb(11, 247, 137);*/
 }
 
 
@@ -195,6 +178,13 @@ nav li a {
     overflow: auto;
     /*font-weight: bold;*/
 }
+
+#line {
+    position: absolute;
+    left: 49%;
+    border-left: solid 5px red;
+}
+
 
 #skills li {
     margin: 2%; 
@@ -257,13 +247,22 @@ nav li a {
         right: 10px;
     }
 
+    #web_dev_geometric {
+        height: 500px;
+        width: 500px;
+    }
+    /*
     #img_container {
         height: 20px;
         width: 40px;
     }
-
+    */
 
 }
+
+
+
+
 /********** DESKTOP FORMAT ***********/
 @media (min-width:601px) {
     
@@ -272,9 +271,9 @@ nav li a {
         min-width: 46%;
         /*max-width: 40%;*/
         width: 49%;
-        float: left;     
-        /*border-right: 7px solid rgb(68, 68, 70);*/
-        border: 5px solid yellow;
+        float: left;    
+        border-right: 7px solid rgb(68, 68, 70);
+        /*border: 5px solid yellow;*/
     }
     
     #col_right{
@@ -284,16 +283,16 @@ nav li a {
         min-width: 40%;
         margin-left: -1px;
         overflow: auto;
-        border: 5px solid green;
+        /*border: 5px solid green;*/
     }   
     
     #profile_pic {
         display: block;
         height: auto;
-        width: 40%;
+        width: 60%;
         
         position: relative;
-        margin-left: 30%;
+        margin-left: 20%;
         margin-right: 52%;
         margin-bottom: 5%;
     }
