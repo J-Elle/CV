@@ -1,3 +1,6 @@
+.rotate {
+    transform: rotate(-35deg);
+}
 
 @font-face {
 	font-family: Script;
@@ -18,6 +21,7 @@ body {
     margin: 10px;
 }
 
+/********** NAV STYLING **********/
 #nav {
     background-color: rgb(68, 68, 70);
     font-size: 1.2em;
@@ -41,6 +45,8 @@ nav li a {
     background: white;
 }
 
+
+/******** CONTENT WRAPPER STYLING ********/
 #content_wrapper {
     width: 80%;
     margin: 10% auto; 
@@ -48,16 +54,20 @@ nav li a {
 }
 
 
-
+/********* HEADER BLOCKS **********/
 .headers {
     display: block;
     background-color: rgb(68, 68, 70);
     color:white;
     font-size: 3em;
     position: relative;
-    /*border: 5px solid rgb(192, 11, 247);*/
+    height: 100px;
 }
 
+.header_images{
+    display:block;
+    float: right;
+}
 
 .headers h2 {
     /*Absolute used as design choice to maintain position within the header container as it contracts*/
@@ -67,31 +77,15 @@ nav li a {
     padding: 0.8em;
 }
 
-.header_images{
-    display:block;
-    float: right;
-}
-
 #web_dev_header {
     height: 200px;
-    /*border: solid 3px red;*/
-}
-
-#employment_header{
-    height: 100px;
-}
-
-#skills_header {
-    height: 100px;
 }
 
 #web_dev_text {
     /*Positioned to be an ancestor for #aspiring*/
     position: absolute; 
-    float: left;
     left: 10%;
     top: 35%;
-    /*border: 5px solid rgb(247, 11, 148);*/
 }
 
 #aspiring {
@@ -99,18 +93,30 @@ nav li a {
     font-family: Script, serif; 
     font-size: 0.4em;
     width: 6ch;
-    top: -35%;
-    left: -12%;
-    /*border: 5px solid rgb(247, 11, 148);*/
+    top: -65%;
+    left: -16%;
 }
 
 
+
+/******** INFO CONTAINERS *******/
+.info_containers {
+    margin-top: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 5%;
+    min-width: 600px;
+    border: 7px solid rgb(68, 68, 70);
+    overflow: auto;
+    /*font-weight: bold;*/
+}
+
+/******** LEFT COLUMN INFO *********/
 .contact_info {
     float: left;
     width: 90%;
     margin-left: 10px;
     margin-bottom: 5px;
-    /*border: 5px solid rgb(153, 11, 247);*/
 }
 
 #contact_number {
@@ -121,10 +127,10 @@ nav li a {
 #name {
     font-size: 2em;
     text-align: center;
-    /*border: 5px solid rgb(11, 247, 137);*/
 }
 
 
+/****** RIGHT COLUMN INFO ********/
 .history {
     /*margin: 20px, 10px, 5px, 10px;*/
     margin-right: 10px;
@@ -133,10 +139,9 @@ nav li a {
     margin-top: 20px;
     position: relative;
     /*left: 50%;*/
-    /*border: 5px solid rgb(233, 11, 247);*/
 }
 
-.history h1 {
+.history h3 {
     margin-bottom: 20px;
 }
 
@@ -159,7 +164,7 @@ nav li a {
     margin-top: 20px;
 }
 
-#col_right h1{
+#col_right h3{
     font-weight: bold;
 }
 
@@ -168,22 +173,7 @@ nav li a {
 }
 
 
-.info_containers {
-    margin-top: 5%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-bottom: 5%;
-    min-width: 600px;
-    border: 7px solid rgb(68, 68, 70);
-    overflow: auto;
-    /*font-weight: bold;*/
-}
-
-#line {
-    position: absolute;
-    left: 49%;
-    border-left: solid 5px red;
-}
+/********* SKILLS SECTION *********/
 
 
 #skills li {
@@ -191,18 +181,9 @@ nav li a {
     display: inline-block;
 }
 
-/*
-#previous_employment {
-    display: block;
-    background-color: rgb(68, 68, 70);
-    height: 50px;
-    /*border: 5px solid rgb(192, 11, 247);
-    position: relative;
-}
 
-*/
-
-#employment_history h1 {
+/******** EMPLOYMENT SECTION **********/
+#employment_history h3 {
     font-weight: bold;
     margin: 2%;
 }
@@ -211,10 +192,11 @@ nav li a {
     margin: 2%;
 }
 
-.rotate {
-    -moz-transform: rotate(-35deg);
-    -webkit-transform: rotate(-35deg);
+#invisible_header{
+    display: none;
 }
+
+
 
 
 
@@ -259,12 +241,7 @@ nav li a {
         height:100px;
         width: 150px;
     }
-    /*
-    #img_container {
-        height: 20px;
-        width: 40px;
-    }
-    */
+  
     .info_containers {
         min-width: 200px;
     }
