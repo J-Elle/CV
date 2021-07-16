@@ -226,30 +226,38 @@ nav li a {
     
     
     #col_left{
-        /*in-width: 40%;*/
-        /*width: 100%;*/
+        position: relative;
+        /*clear: right;*/
+        /*border: 5px solid rgb(54, 11, 247);*/
+        float: left;
         clear: right;
-        border: 5px solid rgb(54, 11, 247);
-        /*height: fit-content;*/
-        overflow: auto;
-        height: inherit;
+        /*width: 80%;*/
     }
     #col_right{
+        position: relative;
+        min-width: 40%;
         /*min-width: 800px;*/
         /*width: 100px;*/
-        border: 5px solid rgb(231, 247, 11);  
+        /*border: 5px solid rgb(231, 247, 11); */ 
     } 
  
     #profile_pic {
-        height: 120px;
-        width: 100px;
-        position:absolute;
-        right: 10px;
+        display: block;
+        position: relative;
+        width: 60%;
+        height: auto;
+        margin-left: 20%;
+        margin-right: 52%;
+        margin-bottom: 5%;
+    }
+    
+    #web_dev_header {
+        height: 100px;
     }
 
-    #web_dev_geometric {
-        height: 500px;
-        width: 500px;
+    .header_images {
+        height:100px;
+        width: 150px;
     }
     /*
     #img_container {
@@ -257,7 +265,23 @@ nav li a {
         width: 40px;
     }
     */
+    .info_containers {
+        min-width: 200px;
+    }
+    
+    
+    #contact_number {
+        margin-top: 5%;
+    }
+    
 
+    .headers h1 {
+        font-size: 0.6em;
+    }
+    .headers h2 {
+        font-size: 0.6em;    
+    }
+    
 }
 
 
@@ -268,8 +292,6 @@ nav li a {
     
     #col_left{
         position: relative; /* Positioning as ancestor */
-        min-width: 46%;
-        /*max-width: 40%;*/
         width: 49%;
         float: left;    
         border-right: 7px solid rgb(68, 68, 70);
@@ -288,10 +310,9 @@ nav li a {
     
     #profile_pic {
         display: block;
+        position: relative;
         height: auto;
         width: 60%;
-        
-        position: relative;
         margin-left: 20%;
         margin-right: 52%;
         margin-bottom: 5%;
