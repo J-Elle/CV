@@ -1,10 +1,11 @@
-.rotate {
-    transform: rotate(-35deg);
+@font-face {
+    font-family:'Petit Formal Script';
+	src: url(../font/PetitFormalScript-Regular.ttf); 
+    
 }
 
-@font-face {
-	font-family: Script;
-	src: url(../font/DancingScript-VariableFont_wght.ttf); /*get different font using @font-face from google*/
+.rotate {
+    transform: rotate(-35deg);
 }
 
 i {
@@ -25,7 +26,6 @@ body {
 #nav {
     background-color: rgb(68, 68, 70);
     font-size: 1.2em;
-    color:white;
     height: 1.5em;
 }
 
@@ -50,7 +50,6 @@ nav li a {
 #content_wrapper {
     width: 80%;
     margin: 10% auto; 
-    /*border: 5px solid rgb(247, 11, 23);*/
 }
 
 
@@ -89,11 +88,11 @@ nav li a {
 }
 
 #aspiring {
-    position: absolute; /*Anchor this element to the parent #web_dev_text for styling purposes*/
-    font-family: Script, serif; 
-    font-size: 0.4em;
+    position: absolute; /*Anchored this element to the parent #web_dev_text for styling purposes*/
+    font-family: 'Petit Formal Script', Cambria, Times, serif; 
+    font-size: 0.3em;
     width: 6ch;
-    top: -65%;
+    top: -45%;
     left: -16%;
 }
 
@@ -138,7 +137,6 @@ nav li a {
     margin-bottom: 5px;
     margin-top: 20px;
     position: relative;
-    /*left: 50%;*/
 }
 
 .history h3 {
@@ -146,15 +144,15 @@ nav li a {
 }
 
 .history a {
-    color:mediumblue;
+    color: rgb(25,125,138);
     text-decoration: none;
 }
 
 .history a:hover {
-    color: blueviolet;
+    color: rgb(21, 173, 235);
 }
 
-/* WANT TO USE ANOTHER PSEUDO CLASS OTHER THAN HOVER
+/* WANT TO USE ANOTHER PSEUDO CLASS OTHER THAN HOVER 
 .history a:visited {
     color:limegreen;
 }
@@ -209,18 +207,13 @@ nav li a {
     
     #col_left{
         position: relative;
-        /*clear: right;*/
-        /*border: 5px solid rgb(54, 11, 247);*/
         float: left;
         clear: right;
-        /*width: 80%;*/
     }
+    
     #col_right{
         position: relative;
         min-width: 40%;
-        /*min-width: 800px;*/
-        /*width: 100px;*/
-        /*border: 5px solid rgb(231, 247, 11); */ 
     } 
  
     #profile_pic {
@@ -272,17 +265,13 @@ nav li a {
         width: 49%;
         float: left;    
         border-right: 7px solid rgb(68, 68, 70);
-        /*border: 5px solid yellow;*/
     }
     
     #col_right{
-        /*display:inline;*/ /*Why didn't inline flow around the float:left item? Because it doesn't start with a <br> by default, needed to use clear?*/
-        /*float: left; *** This is causing other min widths to kick in for history elements */
         position: relative; 
         min-width: 40%;
         margin-left: -1px;
         overflow: auto;
-        /*border: 5px solid green;*/
     }   
     
     #profile_pic {

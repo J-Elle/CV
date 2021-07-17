@@ -10,3 +10,6 @@ Snorlax Image
 Licensed under https://creativecommons.org/licenses/by/3.0/
 From Black-Tavern on https://www.deviantart.com/black-tavern/art/Snorlax-198810702
 Image resized.
+
+Cursive Script 'https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap'
+Licence: Open Font Licence https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
