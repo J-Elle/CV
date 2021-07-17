@@ -1,15 +1,36 @@
-Trophy pic
-Image by <a href="https://pixabay.com/users/peggy_marco-1553824/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1010909">Peggy und Marco Lachmann-Anke</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1010909">Pixabay</a>
-Image by Peggy and Marco Lachmann-Anke from Pixabay
+Project: CV for fictional character 'Snorlax' using HTML and CSS
+Author: Janelle Peisley
 
-Medal
-Image by Alexey Hulsov from Pixabay
-Image by <a href="https://pixabay.com/users/alexey_hulsov-388655/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2163345">Alexey Hulsov</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2163345">Pixabay</a>
+Description:
+A webpage that presents the CV for Snorlax in a presentable and functional way.
 
-Snorlax Image
-Licensed under https://creativecommons.org/licenses/by/3.0/
-From Black-Tavern on https://www.deviantart.com/black-tavern/art/Snorlax-198810702
+
+
+
+*********************   Resources and Licenses *****************************************
+
+Geometric Image 'colour-geometric' and 'colour-geometric-S'
+Image Source https://pixabay.com/illustrations/color-triangle-geometric-textured-2174065/
+Pixaby Simplified License https://pixabay.com/service/license/
+
+Alternate Geometric Image 'triangles'
+Image Source https://pixabay.com/vectors/triangles-polygon-color-pink-1430105/
+Pixaby Simplified License https://pixabay.com/service/license/
+
+Trophy Image 'trophy'
+Image Source https://pixabay.com/illustrations/cup-winner-profit-award-trophy-1010909/
+Pixaby Simplified License https://pixabay.com/service/license/
+
+Medal Image 'medal'
+Image Source https://pixabay.com/illustrations/medal-gold-design-2163345/
+Pixaby Simplified License https://pixabay.com/service/license/
+
+Snorlax Image 'snorlax'
+Author: Black-Tavern 
+Image Source: https://www.deviantart.com/black-tavern/art/Snorlax-198810702
 Image resized.
+Licensed under https://creativecommons.org/licenses/by/3.0/
 
+Font
 Cursive Script 'https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap'
 Licence: Open Font Licence https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
