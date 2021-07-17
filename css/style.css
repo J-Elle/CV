@@ -115,7 +115,13 @@ nav li a {
     margin-bottom: 5%;
 }
 
-/******** LEFT COLUMN INFO *********/
+
+/******** LEFT COLUMN *********/
+#col_left {
+    position: relative;
+    float: left;
+}
+
 .contact_info {
     float: left;
     width: 90%;
@@ -124,7 +130,7 @@ nav li a {
 }
 
 #contact_number {
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 #name {
@@ -133,7 +139,11 @@ nav li a {
 }
 
 
-/****** RIGHT COLUMN INFO ********/
+/****** RIGHT COLUMN ********/
+#col_right {
+    position: relative;
+}
+
 .history {
     position: relative;
     margin: 20px 10px 5px;
@@ -213,8 +223,6 @@ nav li a {
     }
 
     #col_left{
-        position: relative;
-        float: left;
         clear: right;
     }
 
@@ -247,17 +255,14 @@ nav li a {
 @media (min-width:601px) {
     
     #col_left{
-        position: relative; /* Positioning as ancestor */
         width: 49%;
-        float: left;    
         border-right: 7px solid rgb(68, 68, 70);
     }
     
     #col_right{
-        position: relative; 
-        min-width: 40%;
-        margin-left: -1px;
         overflow: auto;
+        left: -6.7px;
+        border-left: 7px solid rgb(68, 68, 70);
     }   
-    
+
 }
