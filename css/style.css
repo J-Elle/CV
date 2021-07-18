@@ -129,7 +129,8 @@ nav li a {
     margin-bottom: 5px;
 }
 
-#contact_number {
+
+.contact_info:first-of-type {
     margin-top: 5%;
 }
 
@@ -168,12 +169,6 @@ nav li a {
     color: rgb(21, 173, 235);
 }
 
-/* WANT TO USE ANOTHER PSEUDO CLASS OTHER THAN HOVER 
-.history a:visited {
-    color:limegreen;
-}
-*/
-
 #about_me {
     margin-top: 20px;
 }
@@ -182,7 +177,7 @@ nav li a {
 /********* SKILLS SECTION *********/
 #skills li {
     margin: 2%; 
-    display: inline-block;
+    display: block;
 }
 
 
@@ -200,18 +195,23 @@ nav li a {
     display: none; /*Header included to pass W3C validator only*/
 }
 
-
+#employment_history ul {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
 
 /******* MOBILE FORMAT ***********/
 @media (max-width:600px) {
     
     .headers {
-        height: 70px;
+        height: 50px;
     }
 
     .header_images {
-        height:70px;
-        width: 100px;
+        height:50px;
+        width: 80px;
     }
 
     .headers h2 {
